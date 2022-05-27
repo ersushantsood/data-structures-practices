@@ -11,6 +11,7 @@ public class TrieContainer<V> implements Trie<V>, TrieBuilder<V> {
     private TrieContainer(TrieNode<V> root) {
         this.root = root;
     }
+
     @Override
     public V getOrDefault(CharSequence str, V defaultValue) {
         TrieNode<V> node = root;
