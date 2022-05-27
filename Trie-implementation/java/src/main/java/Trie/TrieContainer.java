@@ -49,6 +49,7 @@ public class TrieContainer<V> implements Trie<V>, TrieBuilder<V> {
             }
             char c = str.charAt(i);
             TrieNodeBuilder<V> next = nodeBuilder.nodeBuilderChildren.computeIfAbsent(c, k -> new TrieNodeBuilder<>());
+            // recursive building of trienodebuilders per char in string.
             put(str, value, next, i + 1);
         }
 
@@ -80,7 +81,7 @@ public class TrieContainer<V> implements Trie<V>, TrieBuilder<V> {
                 Map.Entry<Character, TrieNodeBuilder<V>> mapEntry = nodeBuilderChildrenIt.next();
                 nodeChars[index] = mapEntry.getKey();
 
-                // recursively building for all the children node builders.
+                // recursively building of all the children trie nodes.
                 nodes[index++] = mapEntry.getValue().buildNode();
             }
 
