@@ -6,12 +6,12 @@ public class Solution {
     public static void main(String[] args){
 
         Trie<Boolean> trie =  TrieBuilder.<Boolean>newBuilder()
-                .put("new.", true)
-                .put("newton.", true)
+                .put("new", true)
+                .put("newton", true)
                 .put("nuke", true)
                 .put("numeric", true)
                 .put("number", true)
-                .put("numb.", true)
+                .put("numb", true)
                 .put("java", true)
                 .put("netizen", true)
                 .put("germany", true)
