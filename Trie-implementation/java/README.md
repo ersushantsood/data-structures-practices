@@ -10,4 +10,4 @@
   These keys are most often strings, with links between nodes defined not by the entire key, but by individual characters. In order to access a key (to recover its value, change it, or remove it), 
   the trie is traversed depth-first, following the links between nodes, which represent each character in the key.
 * Sample Tree :
-![Trie](../data-structures-practices/src/main/resources/trie.png)
+![Trie](../data-structures-practices/src/main/resources/Trie.png)
